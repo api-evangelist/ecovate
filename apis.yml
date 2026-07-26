@@ -1,7 +1,27 @@
 aid: ecovate
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ecovate.png
 name: Ecovate
-description: Ecovate is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Ecovate (Ecovate Energy Indices) is an Israeli energy-data company that
+  operates a platform for the wholesale electricity market price index. It publishes
+  benchmark indices and analytics tracking wholesale electricity market prices, giving
+  energy suppliers, large consumers, traders, and regulators a transparent reference
+  for the cost of electricity in the wholesale market. Ecovate was surfaced as a
+  portfolio company of Battery Ventures and added to the API Evangelist network. The
+  company's public presence is a marketing/product site (Hebrew and English editions)
+  and it does not currently publish a developer program, public API, OpenAPI, SDKs,
+  or documentation surface, so this profile carries identity and domain-security
+  signals only.
 url: https://raw.githubusercontent.com/api-evangelist/ecovate/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Energy
+- Electricity
+- Wholesale Electricity Market
+- Market Data
+- Price Index
+- Analytics
+- Israel
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ecovate-domain-security.yml
+- type: Website
+  url: https://ecovate.io
+- type: About
+  url: https://en.ecovate.io/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
